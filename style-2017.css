@@ -814,18 +814,24 @@ a:active {
 }
 
 .dropdown-toggle {
-    background-color: transparent;
     border: 0;
     border-radius: 0;
     color: #1a1a1a;
     content: "";
-    height: 48px;
+    height: 24px;
     padding: 0;
     position: absolute;
     right: 0;
     text-transform: none;
     top: 0;
-    width: 48px;
+    width: 18;
+}
+
+.dropdown-toggle,
+.dropdown-toggle:hover,
+.dropdown-toggle:active,
+.dropdown-toggle:focus {
+	background-color: transparent;
 }
 
 .header-image a,
