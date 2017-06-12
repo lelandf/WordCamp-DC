@@ -365,7 +365,7 @@ html {
 }
 
 body {
-	background: #fcfcfc; /* Fallback for when there is no custom background color defined. */
+	background: #ddd; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
@@ -658,7 +658,9 @@ a:active {
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
-.screen-reader-text {
+.screen-reader-text,
+.site-footer .main-navigation,
+.site-info {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
@@ -853,6 +855,8 @@ a:active {
 }
 
 .sidebar {
+	background: #f1f1f1;
 	float: right;
+	padding: 0 4.84375%;
 	width: 31.171875%;
 }
