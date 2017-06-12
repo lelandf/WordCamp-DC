@@ -268,6 +268,8 @@ h4,
 h5,
 h6 {
 	clear: both;
+	color: #262262;
+	font-weight: normal;
 }
 
 p {
@@ -435,22 +437,20 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
-	color: rgba(0, 0, 0, .8);
+	background: #ff3615;
+	border: none;
+	color: #fff;
 	font-size: 12px;
 	font-size: 0.75rem;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	text-transform: uppercase;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
+	background: #666;
 }
 
 button:focus,
@@ -461,7 +461,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
+	background: #000;
 }
 
 input[type="text"],
@@ -851,6 +851,7 @@ a:active {
 
 .content-area {
 	float: left;
+	padding: 0 6.09375%;
 	width: 68.828125%;
 }
 
