@@ -258,7 +258,7 @@ textarea {
   font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.5;
+	line-height: 1.74125;
 }
 
 h1,
@@ -865,16 +865,45 @@ a:active {
 .sidebar {
 	background: #f1f1f1;
 	float: right;
-	padding: 0 4.84375%;
+	padding: 88px 4.84375%;
 	width: 31.171875%;
 }
 
+.widget-title,
 .sponsor-level-title {
-	border-top: 1px solid #fff;
 	font-size: 24px;
 	line-height: 1.16083333333;
 }
 
+.sidebar .widget-title {
+	margin-bottom: 13px;
+}
+
+#subscribe-text {
+	padding-bottom: 22px;
+}
+
+#subscribe-field-blog_subscription-2 {
+	margin-bottom: 13px;
+}
+
+#subscribe-submit {
+	padding-bottom: 52px;
+}
+
+.sidebar .sponsor-level-title {
+	padding: 52px 0 40px;
+}
+
+.sponsor-level-title {
+	border-top: 1px solid #fff;
+}
+
 .sponsor-level-title:after {
 	content: " Sponsors"; /* Would normally NEVER do this, but we don't have access to update PHP */
+}
+
+.sidebar * { /* Again, wouldn't normally do this. Really just trying to crank this out */
+	margin: 0;
+	padding: 0;
 }
