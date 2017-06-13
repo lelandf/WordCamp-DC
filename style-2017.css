@@ -870,7 +870,8 @@ a:active {
 }
 
 .widget-title,
-.sponsor-level-title {
+.sponsor-level-title,
+.grid-item h4 {
 	font-size: 24px;
 	line-height: 1.16083333333;
 }
@@ -903,7 +904,29 @@ a:active {
 	content: " Sponsors"; /* Would normally NEVER do this, but we don't have access to update PHP */
 }
 
-.sidebar * { /* Again, wouldn't normally do this. Really just trying to crank this out */
+.wcb_widget_sponsors .sponsor-level .sponsor-logo {
+	margin-bottom: 20px;
+	padding-bottom: 0;
+}
+
+.wcb_widget_sponsors .sponsor-level .sponsor-logo img {
+	display: block;
+}
+
+.sidebar *,
+.home .site-main * { /* Again, wouldn't normally do this. Really just trying to crank this out */
 	margin: 0;
 	padding: 0;
+}
+
+.entry-title {
+	font-size: 40px;
+	font-weight: 900;
+	line-height: 1.2215;
+}
+
+.grid-item h4 {
+	color: #ff3615;
+	font-weight: 600;
+	text-align: left !important; /* Overriding Custom CSS */
 }
