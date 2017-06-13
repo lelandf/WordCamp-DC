@@ -440,9 +440,10 @@ input[type="submit"] {
 	background: #ff3615;
 	border: none;
 	color: #fff;
-	font-size: 12px;
-	font-size: 0.75rem;
+	font-size: 14px;
+	letter-spacing: 0.08em;
 	line-height: 1;
+	padding: 13px 11px 13px 12px;
 	text-transform: uppercase;
 }
 
@@ -480,9 +481,8 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+	border: none;
 	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
 	padding: 3px;
 }
 
@@ -660,7 +660,8 @@ a:active {
 /* Text meant only for screen readers. */
 .screen-reader-text,
 .site-footer .main-navigation,
-.site-info {
+.site-info,
+.wcb_widget_sponsors .widget-title {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
@@ -866,4 +867,14 @@ a:active {
 	float: right;
 	padding: 0 4.84375%;
 	width: 31.171875%;
+}
+
+.sponsor-level-title {
+	border-top: 1px solid #fff;
+	font-size: 24px;
+	line-height: 1.16083333333;
+}
+
+.sponsor-level-title:after {
+	content: " Sponsors"; /* Would normally NEVER do this, but we don't have access to update PHP */
 }
