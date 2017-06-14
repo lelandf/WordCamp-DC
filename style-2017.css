@@ -391,7 +391,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
 }
 
 ul {
@@ -423,6 +423,7 @@ img {
 
 figure {
 	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+	max-width: 100%;
 }
 
 table {
@@ -451,7 +452,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	background: #666;
+	background: #d32f14;
 }
 
 button:focus,
@@ -481,9 +482,13 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	border: none;
+	border: 1px solid #ccc;
 	color: #666;
 	padding: 3px;
+}
+
+#subscribe-field-blog_subscription-2 {
+	border: none;
 }
 
 select {
@@ -737,7 +742,9 @@ a:active {
 .primary-menu:before,
 .primary-menu:after,
 .site-content:before,
-.site-content:after {
+.site-content:after,
+body:not(.search-results) article:not(.type-page):before,
+body:not(.search-results) article:not(.type-page):after {
 	content: "";
 	display: table;
 	table-layout: fixed;
@@ -751,12 +758,75 @@ a:active {
 .site-footer:after,
 .site-header-main:after,
 .primary-menu:after,
-.site-content:after {
+.site-content:after,
+body:not(.search-results) article:not(.type-page):after {
 	clear: both;
 }
 
 /*--------------------------------------------------------------
-# Structure
+# Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin: 0;
+}
+
+.gallery-item {
+	display: inline-block;
+	max-width: 33.33%;
+	padding: 0 1.1400652% 2.2801304%;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-1 .gallery-item {
+	max-width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-icon img {
+	margin: 0 auto;
+}
+
+.gallery-caption {
+	color: #686868;
+	display: block;
+	font-size: 13px;
+	font-size: 0.8125rem;
+	font-style: italic;
+	line-height: 1.6153846154;
+	padding-top: 0.5384615385em;
+}
+
+/*--------------------------------------------------------------
+# More Stuff
 --------------------------------------------------------------*/
 .site {
 	 background: #fff;
@@ -857,13 +927,18 @@ a:active {
 }
 
 .content-area {
+	background: #fff;
 	float: left;
 	padding: 0 6.09375%;
 	width: 68.828125%;
 }
 
+.site-content,
 .sidebar {
 	background: #f1f1f1;
+}
+
+.sidebar {
 	float: right;
 	padding: 88px 4.84375%;
 	width: 31.171875%;
@@ -914,7 +989,7 @@ a:active {
 }
 
 .sidebar *,
-.site-main h1,
+.home .site-main h1,
 .home .site-main p,
 .site-main h4 { /* Again, wouldn't normally do this. Really just trying to crank this out */
 	margin: 0;
@@ -939,10 +1014,10 @@ a:active {
 }
 
 .site-main {
-	padding-top: 83px;
+	padding: 83px 0;
 }
 
-.site-main .entry-title {
+.home .site-main .entry-title {
 	padding-bottom: 30px;
 }
 
@@ -963,4 +1038,75 @@ table,
 th,
 td {
     border: 1px solid #d1d1d1;
+}
+
+.main-navigation .current-menu-item > a,
+.main-navigation .current-menu-ancestor > a {
+	font-weight: 700;
+}
+
+body:not(.search-results) article:not(.type-page) .entry-footer {
+    float: left;
+    margin-top: 0.1538461538em;
+    width: 21.42857143%;
+}
+
+body:not(.search-results) article:not(.type-page) .entry-content {
+    float: right;
+    width: 71.42857144%;
+}
+
+.entry-content h3,
+.entry-content h4 {
+	font-weight: bold;
+}
+
+.single .byline, .full-size-link, body.group-blog:not(.search-results) .byline, body:not(.search-results) .entry-format, body:not(.search-results) .cat-links, body:not(.search-results) .tags-links, body:not(.search-results) article:not(.sticky) .posted-on, body:not(.search-results) article:not(.type-page) .comments-link, body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
+    display: block;
+    margin-bottom: 0.5384615385em;
+}
+
+.entry-footer {
+    color: #686868;
+    font-size: 13px;
+    font-size: 0.8125rem;
+    line-height: 1.6153846154;
+}
+
+body:not(.search-results) article:not(.type-page) .entry-footer .avatar {
+    display: block;
+    height: auto;
+    margin: 0 0 0.5384615385em;
+    width: 49px;
+}
+
+.entry-footer a {
+    color: #686868;
+    text-decoration: none;
+}
+
+.entry-footer .avatar {
+	border-radius: 50%;
+}
+
+.updated:not(.published) {
+    display: none;
+}
+
+.blog .entry-title a {
+	text-decoration: none;
+}
+
+.blog .entry-title a:hover {
+	text-decoration: underline;
+}
+
+.blog .entry-content :first-child,
+.blog .hentry:nth-child(2) .entry-title,
+.single .entry-title {
+	margin-top: 0;
+}
+
+.googlemaps iframe {
+	max-width: 100%;
 }
