@@ -1160,10 +1160,6 @@ body.page .entry-title {
 		max-width: 275px;
 	}
 
-	.grid-item:last-child h4 {
-	    margin-top: 0 !important;
-	}
-
 	.site-info .site-title {
 		display: block;
 		padding-right: 0;
@@ -1201,6 +1197,10 @@ body.page .entry-title {
 		max-width: 394px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.grid-item:last-child h4 {
+	    margin-top: 0 !important;
 	}
 }
 
