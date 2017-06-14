@@ -900,7 +900,7 @@ body:not(.search-results) article:not(.type-page):after {
 .header-image a {
 	background: #262262;
 	display: block;
-	padding: 63px 0;
+	padding: 4.921875% 0;
 	transition: .25s background;
 }
 
@@ -911,6 +911,7 @@ body:not(.search-results) article:not(.type-page):after {
 .header-image img {
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 90%;
 }
 
 .content-area {
