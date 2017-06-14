@@ -843,6 +843,7 @@ a:active {
 .header-image a {
 	background: #262262;
 	display: block;
+	padding: 63px 0;
 	transition: .25s background;
 }
 
@@ -853,7 +854,6 @@ a:active {
 .header-image img {
 	margin-left: auto;
 	margin-right: auto;
-	padding: 10px 0;
 }
 
 .content-area {
@@ -914,7 +914,9 @@ a:active {
 }
 
 .sidebar *,
-.home .site-main * { /* Again, wouldn't normally do this. Really just trying to crank this out */
+.site-main h1,
+.home .site-main p,
+.site-main h4 { /* Again, wouldn't normally do this. Really just trying to crank this out */
 	margin: 0;
 	padding: 0;
 }
@@ -925,8 +927,40 @@ a:active {
 	line-height: 1.2215;
 }
 
-.grid-item h4 {
+.grid-item h4,
+.grid-item h4 a {
 	color: #ff3615;
+}
+
+.grid-item h4 {
 	font-weight: 600;
+	padding: 40px 0 6px;
 	text-align: left !important; /* Overriding Custom CSS */
+}
+
+.site-main {
+	padding-top: 83px;
+}
+
+.site-main .entry-title {
+	padding-bottom: 30px;
+}
+
+.home-grid {
+	margin-top: 60px;
+}
+
+.grid-item h4 a:after {
+	
+}
+
+/* Learn more about DC heading only */
+.grid-item:last-child h4 {
+	margin-top: 41px !important;
+}
+
+table,
+th,
+td {
+    border: 1px solid #d1d1d1;
 }
