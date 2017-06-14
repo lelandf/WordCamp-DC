@@ -666,7 +666,8 @@ a:active {
 .screen-reader-text,
 .site-footer .main-navigation,
 .site-info,
-.wcb_widget_sponsors .widget-title {
+.wcb_widget_sponsors .widget-title,
+.category .page-title {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
@@ -1093,16 +1094,19 @@ body:not(.search-results) article:not(.type-page) .entry-footer .avatar {
     display: none;
 }
 
-.blog .entry-title a {
+.blog .entry-title a,
+.archive .entry-title a {
 	text-decoration: none;
 }
 
-.blog .entry-title a:hover {
+.blog .entry-title a:hover,
+.archive .entry-title a:hover {
 	text-decoration: underline;
 }
 
 .blog .entry-content :first-child,
 .blog .hentry:nth-child(2) .entry-title,
+.archive .hentry:nth-child(2) .entry-title,
 .single .entry-title {
 	margin-top: 0;
 }
