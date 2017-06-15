@@ -1055,7 +1055,15 @@ body:not(.search-results) article:not(.type-page) .entry-content {
 	font-weight: bold;
 }
 
-.single .byline, .full-size-link, body.group-blog:not(.search-results) .byline, body:not(.search-results) .entry-format, body:not(.search-results) .cat-links, body:not(.search-results) .tags-links, body:not(.search-results) article:not(.sticky) .posted-on, body:not(.search-results) article:not(.type-page) .comments-link, body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
+.single .byline,
+.full-size-link,
+body.group-blog:not(.search-results) .byline,
+body:not(.search-results) .entry-format,
+body:not(.search-results) .cat-links,
+body:not(.search-results) .tags-links,
+body:not(.search-results) article:not(.sticky) .posted-on,
+body:not(.search-results) article:not(.type-page) .comments-link,
+body:not(.search-results) article:not(.type-page) .entry-footer .edit-link {
     display: block;
     margin-bottom: 0.5384615385em;
 }
@@ -1201,6 +1209,14 @@ body.page .entry-title {
 
 	.grid-item:last-child h4 {
 	    margin-top: 0 !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body:not(.search-results) article:not(.type-page) .entry-footer,
+	body:not(.search-results) article:not(.type-page) .entry-content {
+		float: none;
+		width: 100%;
 	}
 }
 
