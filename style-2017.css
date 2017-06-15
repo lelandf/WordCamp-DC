@@ -1221,6 +1221,10 @@ body.page .entry-title {
 }
 
 @media screen and (max-width: 400px) {
+	.entry-title {
+		font-size: 24px;
+	}
+
 	.site-branding {
 		width: 140px;
 	}
