@@ -694,7 +694,8 @@ a:active {
 .screen-reader-text,
 .site-footer .main-navigation,
 .wcb_widget_sponsors .widget-title,
-.category .page-title {
+.category .page-title,
+.says {
 	clip: rect(1px, 1px, 1px, 1px);
 	position: absolute !important;
 	height: 1px;
@@ -706,7 +707,8 @@ a:active {
 .screen-reader-text:focus,
 .site-footer .main-navigation:focus,
 .wcb_widget_sponsors .widget-title:focus,
-.category .page-title:focus {
+.category .page-title:focus,
+.says:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
