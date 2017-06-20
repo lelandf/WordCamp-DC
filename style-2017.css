@@ -1220,6 +1220,9 @@ h2#government {
 /*--------------------------------------------------------------
 # Comment Styles. Thanks Twenty Sixteen!
 --------------------------------------------------------------*/
+.comments-area {
+	padding-top: 3em;
+}
 
 .comment-list + .comment-respond,
 .comment-navigation + .comment-respond {
