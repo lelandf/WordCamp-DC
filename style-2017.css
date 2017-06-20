@@ -1294,6 +1294,7 @@ h2#government {
 .comment-metadata a,
 .pingback .comment-edit-link {
 	color: #686868;
+	text-decoration: none;
 }
 
 .comment-metadata .edit-link,
