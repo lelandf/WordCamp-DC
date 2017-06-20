@@ -930,7 +930,8 @@ body:not(.search-results) article:not(.type-page):after {
 
 /* When sidebar is longer than homepage */
 .home .site-content,
-.page-slug-tickets .site-content {
+.page-slug-tickets .site-content,
+.single-wcb_sponsor .site-content {
 	background: #fff;
 }
 
