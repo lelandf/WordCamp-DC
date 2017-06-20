@@ -1137,7 +1137,11 @@ body.page .entry-title {
 	color: #fff;
 }
 
-.page-slug-sessions .entry-content h1 {
+h2#design,
+h2#developer,
+h2#users,
+h2#agency,
+h2#government {
 	font-weight: bold;
 }
 
