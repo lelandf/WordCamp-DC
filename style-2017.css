@@ -1137,6 +1137,34 @@ body.page .entry-title {
 	color: #fff;
 }
 
+.page-slug-sessions .entry-content h1 {
+	font-weight: bold;
+}
+
+.wcorg-session h2:first-child {
+	line-height: 1.4
+}
+
+.wcorg-session h2:first-child,
+.wcorg-session-description p {
+	margin: 0;
+}
+
+.wcorg-session-description .avatar {
+	float: left;
+	margin: 8px 1.5em 1.5em 0;
+}
+
+.wcorg-session-description p.wcpt-session-meta {
+	border-bottom: 1px solid #cfcfcf;
+	padding-bottom: .5em;
+	margin-bottom: 1em;
+}
+
+.wcorg-session {
+	margin-bottom: 3em;
+}
+
 /*--------------------------------------------------------------
 # Responsive Stuff
 --------------------------------------------------------------*/
