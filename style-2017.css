@@ -1146,7 +1146,7 @@ body.page .entry-title {
 }
 
 .wcorg-session h2:first-child,
-.wcorg-session-description p {
+.wcorg-session-description p:last-child {
 	margin: 0;
 }
 
@@ -1158,6 +1158,7 @@ body.page .entry-title {
 .wcorg-session-description p.wcpt-session-meta {
 	border-bottom: 1px solid #cfcfcf;
 	padding-bottom: .5em;
+	margin-top: 0;
 	margin-bottom: 1em;
 }
 
