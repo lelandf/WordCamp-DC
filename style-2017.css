@@ -1179,6 +1179,10 @@ h2#government {
 	padding: 1em;
 }
 
+.wcpt-schedule:nth-child(2) {
+	margin-bottom: 3em;
+}
+
 .wcpt-session-speakers {
 	display: block;
 	font-size: 80%;
