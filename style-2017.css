@@ -1173,6 +1173,23 @@ h2#government {
 	margin-bottom: 3em;
 }
 
+/* Schedule table cleanup */
+.wcpt-schedule td,
+.wcpt-schedule th {
+	padding: 1em;
+}
+
+.wcpt-session-speakers {
+	display: block;
+	font-size: 80%;
+	margin-top: .5em;
+	font-style: italic;
+}
+
+.wcpt-session-speakers:before {
+  content: "Speakers: ";
+}
+
 /*--------------------------------------------------------------
 # Post Nav Styles. Thanks Twenty Sixteen!
 --------------------------------------------------------------*/
