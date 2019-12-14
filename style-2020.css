@@ -178,7 +178,9 @@ body .page-navigation-container ul ul {
 	margin: 0;
 	padding-bottom: 15px;
 	padding-top: 30px;
-	text-align: center;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .entry-content {
@@ -189,7 +191,8 @@ body .page-navigation-container ul ul {
 	font-size: 20px;
 	line-height: 151.9%;
 	margin: 0 auto;
-	max-width: 626px;
+    max-width: 656px;
+    padding: 0 15px;
 }
 
 .background-section {
