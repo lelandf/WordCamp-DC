@@ -100,7 +100,7 @@ a, a:visited {
 .site-description {
 	font-weight: 600;
 	font-size: 28px;
-	line-height: 40px;
+	line-height: 1.4;
 	margin: 0;
 	padding-top: 30px;
 	text-align: center;
@@ -414,4 +414,26 @@ body:not(.page-slug-home) .content-area {
 
 .page:not(.home) .entry-content ul > li {
 	margin-bottom: .5em;
+}
+
+@media (max-width: 600px) {
+    .custom-header {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .custom-logo-link {
+        max-width: 150px;
+    }
+
+    .site-description {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .site-description:after {
+        content: ": A WordPress conference in Washington, DC";
+        display: inline;
+    }
 }
