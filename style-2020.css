@@ -440,6 +440,16 @@ body:not(.page-slug-home) .content-area {
 	top: -1px
 }
 
+@media (max-width: 900px) {
+    .cta-block {
+        width: calc(33.3333% - 7.5px);
+    }
+
+    .cta-block__inner {
+        padding: 60px 15px;
+    }
+}
+
 @media (max-width: 600px) {
     .custom-header {
         padding-top: 30px;
