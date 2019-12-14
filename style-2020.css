@@ -424,6 +424,8 @@ body:not(.page-slug-home) .content-area {
     border-radius: 0;
     color: #fff;
     display: block;
+    font-size: 21px;
+    text-transform: uppercase;
     width: 100%;
 }
 
@@ -470,6 +472,7 @@ body:not(.page-slug-home) .content-area {
     }
 
     body .page-navigation-container ul ul {
+        box-shadow: none !important;
         position: static;
         float: none;
     }
@@ -501,7 +504,7 @@ body:not(.page-slug-home) .content-area {
     }
 
     .sub-menu li:not(:first-child) {
-
+        border-top: none;
     }
 }
 
