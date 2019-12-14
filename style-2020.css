@@ -320,11 +320,12 @@ body:not(.page-slug-home) .content-area {
 	background: #fff;
 	margin-bottom: 30px;
 	display: flex !important;
-	align-items: center;
+    align-items: center;
+    min-width: 150px;
 }
 
 .sponsor-logo img {
-	max-width: 65% !important;
+	max-width: 85% !important;
 	margin: 0 auto;
 	display: block;
 }
@@ -351,7 +352,7 @@ body:not(.page-slug-home) .content-area {
 }
 
 #subscribe-text,
-#subscribe-email input {
+body #subscribe-email input {
 	width: 100%;
 }
 
@@ -449,6 +450,24 @@ body:not(.page-slug-home) .content-area {
     .cta-block__inner {
         padding: 60px 15px;
     }
+
+    .image-content-block__image {
+        width: calc(50% - 30px);
+    }
+
+    #secondary {
+        display: block;
+        padding: 45px 15px;
+    }
+
+    #primary-sidebar,
+    #secondary-sidebar {
+        width: 100%;
+    }
+
+    #secondary-sidebar {
+        padding-top: 30px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -543,6 +562,18 @@ body:not(.page-slug-home) .content-area {
 
     .cta-block__inner {
         padding: 45px;
+    }
+
+    .sponsor-level.federal .sponsor-logo {
+        width: 100%;
+    }
+
+    .sponsor-level.district .sponsor-logo {
+        width: calc(50% - 10px);
+    }
+
+    .sponsor-level.ward .sponsor-logo {
+        width: calc(33.333% - 5px);
     }
 }
 
