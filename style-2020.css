@@ -14,7 +14,8 @@ h3,
 h4,
 h5,
 h6,
-#subscribe-submit button {
+#subscribe-submit button,
+.menu-toggle {
 	font-family: 'Teko';
 }
 
@@ -23,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.menu-toggle {
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -44,7 +46,8 @@ a, a:visited {
 	color: #D32E13;
 }
 
-#subscribe-submit button {
+#subscribe-submit button,
+.menu-toggle {
 	background: #D32E13;
 }
 
@@ -416,6 +419,22 @@ body:not(.page-slug-home) .content-area {
 	margin-bottom: .5em;
 }
 
+.menu-toggle {
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+
+.menu-toggle:after {
+	font-family: 'FontAwesome';
+	content: "\f0c9";
+	font-size: 12px;
+	position: relative;
+	top: -1px
+}
+
 @media (max-width: 600px) {
     .custom-header {
         padding-top: 30px;
@@ -436,4 +455,53 @@ body:not(.page-slug-home) .content-area {
         content: ": A WordPress conference in Washington, DC";
         display: inline;
     }
+
+    .main-navigation {
+        padding-top: 0;
+    }
+
+    #primary-menu > li {
+        padding: 0;
+    }
+
+    #primary-menu > li {
+        display: block;
+        border-bottom: 1px solid #cfcfcf;
+    }
+
+    body .page-navigation-container ul ul {
+        position: static;
+        float: none;
+    }
+
+    .page-navigation-container a {
+        line-height: 1;
+        padding: 15px;
+    }
+
+    .page-navigation-container li {
+        float: none;
+    }
+
+    .page-navigation-container ul ul a {
+        width: 100%;
+    }
+
+    /* Dropdown already revealed on mobile, otherwise this would be bad */
+    .js .dropdown-toggle {
+        display: none;
+    }
+
+    #primary-menu > li.menu-item-has-children::after {
+        display: none;
+    }
+
+    .sub-menu a {
+        text-align: center;
+    }
+
+    .sub-menu li:not(:first-child) {
+
+    }
 }
+
