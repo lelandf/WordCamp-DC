@@ -227,7 +227,8 @@ body .page-navigation-container ul ul {
 	padding: 60px;
 	text-decoration: none;
 	text-align: center;
-	transition: .25s transform;
+    transition: .25s transform;
+    height: 100%;
 }
 
 .cta-block__inner:hover {
@@ -518,6 +519,30 @@ body:not(.page-slug-home) .content-area {
 
     .sub-menu li:not(:first-child) {
         border-top: none;
+    }
+
+    .cta-blocks,
+    .image-content-block {
+        display: block;
+    }
+
+    .cta-block,
+    .image-content-block__image,
+    .image-content-block__body {
+        width: 100%;
+    }
+
+    .cta-block:not(:last-child),
+    .image-content-block__image {
+        margin-bottom: 30px;
+    }
+
+    .cta-block__cta {
+        padding-top: 15px;
+    }
+
+    .cta-block__inner {
+        padding: 45px;
     }
 }
 
