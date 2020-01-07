@@ -477,6 +477,10 @@ textarea:active {
 	margin-bottom: 1.5em;
 }
 
+.comment-form label {
+	display: block;;
+}
+
 /* Responsive Stuff */
 .menu-toggle {
     border: none;
