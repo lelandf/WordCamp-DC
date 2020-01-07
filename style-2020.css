@@ -59,6 +59,10 @@ a, a:visited {
 	background-attachment: fixed;
 	background-size: cover;
 	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.home .custom-header {
 	padding-bottom: 40vh;
 }
 
@@ -471,7 +475,8 @@ body #subscribe-email input {
 }
 
 @media (max-width: 600px) {
-    .custom-header {
+	.custom-header,
+	.home .custom-header {
         padding-top: 30px;
         padding-bottom: 30px;
     }
