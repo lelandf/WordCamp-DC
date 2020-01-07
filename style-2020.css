@@ -406,25 +406,30 @@ body #subscribe-email input {
 	margin-top: 10px;
 }
 
-.page:not(.home) .entry-title {
+.page:not(.home) .entry-title,
+.single-post .entry-title {
 	font-size: 36px;
 	margin: 0;
 	text-align: center;
 }
 
-.page:not(.home) h4 {
+.page:not(.home) h4,
+.single-post h4 {
 	font-size: 24px;
 }
 
-.page:not(.home) .entry-content {
+.page:not(.home) .entry-content,
+.single-post .entry-content {
 	font-size: 21px;
 }
 
-.page:not(.home) .entry-content ul {
+.page:not(.home) .entry-content ul,
+.single-post .entry-content ul {
 	margin-left: 0;
 }
 
-.page:not(.home) .entry-content ul > li {
+.page:not(.home) .entry-content ul > li,
+.single-post .entry-content ul > li {
 	margin-bottom: .5em;
 }
 
