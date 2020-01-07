@@ -477,7 +477,10 @@ textarea:active {
 	margin-bottom: 1.5em;
 }
 
-.comment-form label {
+.comment-form-comment label,
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label {
 	display: block;;
 }
 
