@@ -423,7 +423,8 @@ input[type="submit"] {
 }
 
 .page:not(.home) .entry-title,
-.single-post .entry-title {
+.single-post .entry-title,
+.blog .entry-title {
 	font-size: 36px;
 	margin: 0;
 	text-align: center;
@@ -435,23 +436,27 @@ input[type="submit"] {
 	font-size: 24px;
 }
 
-.single-post .entry-meta {
+.single-post .entry-meta,
+.blog .entry-meta {
 	margin-bottom: 1em;
 	text-align: center;
 }
 
 .page:not(.home) .entry-content,
-.single-post .entry-content {
+.single-post .entry-content,
+.blog .entry-content {
 	font-size: 21px;
 }
 
 .page:not(.home) .entry-content ul,
-.single-post .entry-content ul {
+.single-post .entry-content ul,
+.blog .entry-content ul {
 	margin-left: 0;
 }
 
 .page:not(.home) .entry-content ul > li,
-.single-post .entry-content ul > li {
+.single-post .entry-content ul > li,
+.blog .entry-content ul > li {
 	margin-bottom: .5em;
 }
 
