@@ -460,6 +460,36 @@ input[type="submit"] {
 	margin-bottom: .5em;
 }
 
+/* Blog Cleanup */
+.blog .hentry {
+	margin-bottom: 90px;
+	position: relative;
+	padding-bottom: 90px;
+}
+
+.blog .hentry:after {
+	background: #ccc;
+	content: "";
+	width: 200px;
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100px;
+}
+
+.blog .hentry:last-child {
+	margin-bottom: 0;
+}
+
+.blog .hentry:last-child:after {
+	display: none;
+}
+
+.blog .entry-image {
+	display: none;
+}
+
 /* Form Styles */
 input[type="text"],
 input[type="email"],
