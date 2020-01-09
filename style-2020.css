@@ -490,6 +490,11 @@ input[type="submit"] {
 	display: none;
 }
 
+.entry-footer > * {
+	display: inline-block;
+	padding-right: 10px;
+}
+
 /* Form Styles */
 input[type="text"],
 input[type="email"],
