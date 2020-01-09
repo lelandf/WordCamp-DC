@@ -510,6 +510,27 @@ input[type="submit"] {
 	padding: 10px;
 }
 
+.tix-row-coupon {
+	font-size: 13px;
+}
+
+.tix_tickets_table .tix-row-coupon > td {
+	padding: 20px 10px;
+}
+
+.tix-row-coupon > td {
+	text-align: center !important;
+}
+
+#tix-coupon-container {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+#tix-coupon-input {
+	width: 100%;
+}
+
 /* Form Styles */
 input[type="text"],
 input[type="email"],
