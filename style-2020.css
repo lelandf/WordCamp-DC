@@ -506,7 +506,8 @@ input[type="submit"] {
 }
 
 .tix_tickets_table th,
-.tix_tickets_table td {
+.tix_tickets_table td,
+.tix_tickets_table select {
 	padding: 10px;
 }
 
@@ -529,6 +530,10 @@ input[type="submit"] {
 
 #tix-coupon-input {
 	width: 100%;
+}
+
+#tix {
+	margin-bottom: 60px;
 }
 
 /* Form Styles */
