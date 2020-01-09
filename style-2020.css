@@ -495,6 +495,21 @@ input[type="submit"] {
 	padding-right: 10px;
 }
 
+/* Tickets Cleanup */
+.tix_tickets_table {
+	font-size: 16px;
+	margin: -10px;
+}
+
+.tix_tickets_table th {
+	text-align: left;
+}
+
+.tix_tickets_table th,
+.tix_tickets_table td {
+	padding: 10px;
+}
+
 /* Form Styles */
 input[type="text"],
 input[type="email"],
