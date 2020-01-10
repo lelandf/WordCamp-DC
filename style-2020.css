@@ -467,7 +467,8 @@ input[type="submit"] {
 	padding-bottom: 90px;
 }
 
-.blog .hentry:after {
+.blog .hentry:after,
+.tix_tickets_table > tbody > tr:nth-last-child(-n+2):after {
 	background: #ccc;
 	content: "";
 	width: 200px;
@@ -476,6 +477,12 @@ input[type="submit"] {
 	bottom: 0;
 	left: 50%;
 	margin-left: -100px;
+}
+
+@media (min-width: 601px) {
+	.tix_tickets_table > tbody > tr:nth-last-child(-n+2):after {
+		display: none;
+	}
 }
 
 .blog .hentry:last-child {
@@ -566,9 +573,29 @@ input[type="submit"] {
 		width: auto;
 		z-index: 100000; /* Above WP toolbar. */
 	}
+
+	.tix_tickets_table > tbody > tr:nth-last-child(-n+2) {
+		display: block;
+		margin-bottom: 45px;
+		position: relative;
+		padding-bottom: 45px;
+	}
 	
 	.tix_tickets_table td {
 		display: block;
+	}
+
+	.tix-column-price,
+	.tix-column-remaining,
+	.tix-column-quantity {
+		font-size: 14px;;
+		padding: 5px 10px;
+	}
+
+	.tix-column-price:before,
+	.tix-column-remaining:before,
+	.tix-column-quantity:before {
+		font-weight: bold;
 	}
 	
 	.tix-column-price:before {
