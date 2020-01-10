@@ -505,7 +505,7 @@ input[type="submit"] {
 /* Tickets Cleanup */
 .tix_tickets_table {
 	font-size: 16px;
-	margin: -10px;
+	margin: -15px;
 }
 
 .tix_tickets_table th {
@@ -513,7 +513,11 @@ input[type="submit"] {
 }
 
 .tix_tickets_table th,
-.tix_tickets_table td,
+.tix_tickets_table td {
+	padding: 15px;
+}
+
+,
 .tix_tickets_table select {
 	padding: 10px;
 }
@@ -541,6 +545,10 @@ input[type="submit"] {
 
 #tix {
 	margin-bottom: 60px;
+}
+
+.tix-column-remaining {
+	display: none !important;
 }
 
 @media (max-width: 600px) {
