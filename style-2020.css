@@ -467,6 +467,14 @@ input[type="submit"] {
 	padding-bottom: 90px;
 }
 
+.entry-image {
+	padding-bottom: 15px;
+}
+
+.wp-caption .wp-caption-text {
+	font-size: 12px;
+}
+
 .blog .hentry:after,
 .tix_tickets_table > tbody > tr:nth-last-child(n+3):after {
 	background: #ccc;
