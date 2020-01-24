@@ -558,6 +558,11 @@ input[type="submit"] {
 	display: none !important;
 }
 
+/* Sponsors */
+.single-wcb_sponsor .post-navigation {
+    display: none;
+}
+
 @media (max-width: 600px) {
 	.tix_tickets_table thead {
 		border: 0;
