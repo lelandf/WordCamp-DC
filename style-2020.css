@@ -563,6 +563,10 @@ input[type="submit"] {
     display: none;
 }
 
+.page-slug-sponsors .wordcamp-post-list {
+	padding-left: 0;
+}
+
 @media (max-width: 600px) {
 	.tix_tickets_table thead {
 		border: 0;
