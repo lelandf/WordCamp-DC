@@ -873,3 +873,11 @@ textarea:active {
     }
 }
 
+@media (max-width: 480px) {
+	.wp-block-image .alignleft,
+	.wp-block-image .alignright {
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
