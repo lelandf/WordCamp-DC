@@ -596,6 +596,18 @@ input[type="submit"] {
 	padding-left: 0;
 }
 
+/* Random Bug Fixes */
+@media (max-width: 600px) {
+	#eu-cookie-law br {
+		display: none;
+	}
+	
+	#eu-cookie-law input.accept {
+		width: auto;
+		height: auto;
+	}
+}
+
 @media (max-width: 600px) {
 	.tix_tickets_table thead {
 		border: 0;
