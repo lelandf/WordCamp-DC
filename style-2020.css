@@ -74,6 +74,35 @@ input[type="submit"] {
 	padding-bottom: 40vh;
 }
 
+@media screen and (min-width: 37.5em) {
+	.home .site-header {
+		position: relative;
+	}
+	
+	.home .menu-item-796 {
+		position: absolute !important;
+		width: 100%;
+		left: 0;
+		right: 0;
+		bottom: 23vh;
+	}
+	
+	.home .menu-item-796 a {
+		max-width: 300px;
+		margin: 0 auto;
+		background: #D32E13;
+		padding: 10px 15px;
+		color: #fff !important;
+		line-height: 1 !important;
+	}
+}
+
+@media screen and (min-width: 37.5em) and (max-height: 600px) {
+	.home .menu-item-796 {
+		bottom: 46vh;
+	}
+}
+
 /* Text meant only for screen readers. */
 .site-title {
     border: 0;
