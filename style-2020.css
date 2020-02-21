@@ -930,6 +930,11 @@ textarea:active {
 		margin-left: 0;
 	}
 
+	.single-wcb_speaker .speaker-avatar {
+		padding-bottom: 1em;
+		text-align: center;
+	}
+
 	.wordcamp-speakers__post .wordcamp-image__avatar-container,
 	.wordcamp-speakers__content {
 		width: 100%;
