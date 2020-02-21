@@ -520,6 +520,40 @@ input[type="submit"] {
 	font-size: 18px;
 }
 
+/* Speakers */
+ul.wordcamp-speakers {
+	padding-left: 0;
+}
+
+.wordcamp-speakers__post {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.wordcamp-speakers__title {
+	font-size: 1.5em;
+	margin: 0 0 .5em;
+	width: 100%;
+}
+
+.wordcamp-speakers__post .wordcamp-image__avatar-container {
+	width: 150px;
+}
+
+.wordcamp-speakers__content {
+	padding-left: 2em;
+	width: calc(100% - 150px);
+}
+
+.wordcamp-speakers__post .wordcamp-image__avatar-container .avatar {
+	position: relative;
+	top: 8px;
+}
+
+.wordcamp-speakers__content > :first-child {
+	margin-top: 0;
+}
+
 @media (min-width: 601px) {
 	.tix_tickets_table > tbody > tr:nth-last-child(n+3):after {
 		display: none;
@@ -879,5 +913,18 @@ textarea:active {
 		float: none;
 		margin-right: 0;
 		margin-left: 0;
+	}
+
+	.wordcamp-speakers__post .wordcamp-image__avatar-container,
+	.wordcamp-speakers__content {
+		width: 100%;
+	}
+	
+	.wordcamp-speakers__content {
+		padding-left: 0;
+	}
+	
+	.wordcamp-speakers__post .wordcamp-image__avatar-container .avatar {
+		position: static;
 	}
 }
